@@ -1,5 +1,5 @@
 function getWeather(location) {
-  const api = `http://api.weatherapi.com/v1/current.json?key=d2282deb52c74c0691013155210302&q=${location}`;
+  const api = `https://api.weatherapi.com/v1/current.json?key=d2282deb52c74c0691013155210302&q=${location}`;
 
   fetch(api)
     .then((response) => response.json())
@@ -88,7 +88,7 @@ search.addEventListener("input", function (event) {
 
   if (!value) return false;
 
-  const query = `http://api.weatherapi.com/v1/search.json?key=d2282deb52c74c0691013155210302&q=${value}`;
+  const query = `https://api.weatherapi.com/v1/search.json?key=d2282deb52c74c0691013155210302&q=${value}`;
   fetch(query)
     .then((response) => response.json())
     .then((cities) => {
