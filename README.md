@@ -1,3 +1,3 @@
 # weather-app
 
-## A weather app using vanilla javasscript
+## A weather app using vanilla JavaScript
